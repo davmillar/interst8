@@ -1,16 +1,19 @@
 #!/bin/bash
 
-echo "Combining stylesheets...";
+echo "Combining and compressing CSS...";
 
-cat css/style.css \
+cat css/style.less \
+  | lessc --clean-css - \
+  | yui-compressor --type=css \
   > ./built/css/built.css;
 
 STYLE_SUM=`shasum ./built/css/built.css | awk '{print $1}'`;
 
-echo "Combining JavaScript...";
+echo "Combining and compressing JS...";
 
 cat js/jquery.js \
   js/scripts.js \
+  | yui-compressor --type=js \
   > ./built/js/built.js;
 
 SCRIPT_SUM=`shasum ./built/js/built.js | awk '{print $1}'`;
