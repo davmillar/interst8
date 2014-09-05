@@ -1,0 +1,21 @@
+.dingding-key {
+  display: block;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+.dingding-left-1 { left:     0; bottom: 100px; }
+.dingding-left-2 { left:     0; bottom:  50px; }
+.dingding-left-3 { left:  50px; bottom:  50px; }
+.dingding-left-4 { left:  50px; bottom:     0; }
+.dingding-left-5 { left: 100px; bottom:     0; }
+
+.dingding-right-1 { right:     0; bottom: 100px; }
+.dingding-right-2 { right:     0; bottom:  50px; }
+.dingding-right-3 { right:  50px; bottom:  50px; }
+.dingding-right-4 { right:  50px; bottom:     0; }
+.dingding-right-5 { right: 100px; bottom:     0; }
+.dingding-right-6 { right:     0; bottom:     0; }

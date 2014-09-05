@@ -6,8 +6,10 @@ var interst8 = {
   initGame: function () {
     console.log("initGame");
 
+    dingding.init();
   }
 };
 
-$(document)
-  .on('ready', interst8.initGame);
+$(document).on({
+  'ready': interst8.initGame
+});

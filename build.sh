@@ -3,6 +3,7 @@
 echo "Combining and compressing CSS...";
 
 cat css/style.less \
+  css/dingding.css \
   | lessc --clean-css - \
   | yui-compressor --type=css \
   > ./built/css/built.css;
@@ -12,6 +13,7 @@ STYLE_SUM=`shasum ./built/css/built.css | awk '{print $1}'`;
 echo "Combining and compressing JS...";
 
 cat js/jquery.js \
+  js/dingding.js \
   js/scripts.js \
   | yui-compressor --type=js \
   > ./built/js/built.js;
