@@ -1,30 +1,50 @@
 #!/bin/bash
 
+echo "Checking for folders and clearing them..."
+
+rm -r ./built/
+mkdir -p ./built/js/
+
+echo "Copying assets to build dir...";
+
+cp ./assets/ ./built/assets
+
 echo "Combining and compressing CSS...";
 
-cat css/style.less \
-  css/dingding.css \
-  | lessc --clean-css - \
-  | yui-compressor --type=css \
-  > ./built/css/built.css;
+cat css/style.css \
+    css/overpass.css \
+    | java -jar bin/yuicompressor-2.4.8.jar --type=css \
+    > ./built/assets/built.css;
 
-STYLE_SUM=`shasum ./built/css/built.css | awk '{print $1}'`;
+echo "Combining and compressing game JS...";
 
-echo "Combining and compressing JS...";
+cat js/game.js \
+    service-worker-handler.js \
+    | java -jar bin/yuicompressor-2.4.8.jar --type=js \
+    > ./built/assets/built.js;
 
-cat js/jquery.js \
-  js/dingding.js \
-  js/scripts.js \
-  | yui-compressor --type=js \
-  > ./built/js/built.js;
+echo "Combining and compressing service worker JS...";
 
-SCRIPT_SUM=`shasum ./built/js/built.js | awk '{print $1}'`;
+cat js/service-worker.js \
+    | java -jar bin/yuicompressor-2.4.8.jar --type=js \
+    > ./built/js/service-worker.js;
 
 echo "Generating unique build HTML...";
 
 cat build_template.html \
-  | sed -e "s#{{SCRIPT_HASH}}#$SCRIPT_SUM#g" \
-  | sed -e "s#{{STYLE_HASH}}#$STYLE_SUM#g" \
-  > ./built/index.html;
+    > ./built/index.html;
+
+echo "Updating and compressing service worker JS..."
+
+csssum="$(tar -cf - css | md5sum | cut -c -5)"
+jssum="$(tar -cf - js | md5sum | cut -c -5)"
+assetssum="$(tar -cf - assets | md5sum | cut -c -5)"
+indexsum="$(md5sum built/index.html | cut -c -5)"
+
+cat \
+    js/service-worker.js \
+    | sed "s/my-site-cache-v1/${contentsum}-${assetssum}-${indexsum}/" \
+    | java -jar bin/yuicompressor-2.4.8.jar --type=js \
+    > ./assets/js/service-worker.js
 
 echo "Build complete!";
