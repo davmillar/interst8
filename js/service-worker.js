@@ -7,7 +7,8 @@ var CACHE_NAME = 'my-site-cache-v1',
       '/assets/Overpass_Regular-webfont.ttf',
       '/assets/Overpass_Regular-webfont.woff',
       '/assets/built.css',
-      '/assets/built.js'
+      '/assets/built.js',
+      '/data/levels.json'
     ];
 
 self.addEventListener('install', function(event) {
