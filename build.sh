@@ -8,6 +8,7 @@ mkdir -p ./built/js/
 echo "Copying assets to build dir...";
 
 cp ./assets/ ./built/assets
+cp ./manifest.json ./built/
 
 echo "Combining and compressing CSS...";
 

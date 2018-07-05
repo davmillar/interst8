@@ -1,0 +1,16 @@
+{
+    "name": "Interst8",
+    "short_name": "Interst8",
+    "lang": "en-US",
+    "start_url": "/?utm_source=web_app_manifest",
+    "display": "standalone",
+    "background_color": "#308446",
+    "theme_color": "#308446",
+    ​​"orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/images/logo.svg",
+            "sizes": "400x400"
+        }
+    ]
+}
