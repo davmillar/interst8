@@ -5,9 +5,10 @@ echo "Checking for folders and clearing them..."
 rm -r ./built/
 mkdir -p ./built/js/
 
-echo "Copying assets to build dir...";
+echo "Copying assets and data to build dir...";
 
-cp ./assets/ ./built/assets
+cp -r ./assets/ ./built/assets
+cp -r ./data/ ./built/data
 cp ./manifest.json ./built/
 
 echo "Combining and compressing CSS...";
@@ -20,7 +21,7 @@ cat css/style.css \
 echo "Combining and compressing game JS...";
 
 cat js/game.js \
-    service-worker-handler.js \
+    js/service-worker-handler.js \
     | java -jar bin/yuicompressor-2.4.8.jar --type=js \
     > ./built/assets/built.js;
 
@@ -46,6 +47,6 @@ cat \
     js/service-worker.js \
     | sed "s/my-site-cache-v1/${contentsum}-${assetssum}-${indexsum}/" \
     | java -jar bin/yuicompressor-2.4.8.jar --type=js \
-    > ./assets/js/service-worker.js
+    > ./built/js/service-worker.js
 
 echo "Build complete!";
