@@ -1,8 +1,16 @@
 [
     {
         "id": 1,
-        "name": "Interstate 35W",
+        "name": "Interstate 35W/35E",
+        "description": "Discover pairs of words made by swapping state abbreviations.",
         "icon": "assets/images/level-icons/i35w.svg",
-        "data": "data/levels/135w.json"
+        "data": "data/levels/i35w.json"
+    },
+    {
+        "id": 2,
+        "name": "M-37 (East Beltline)",
+        "description": "Discover words that can be made by putting together state abbreviations.",
+        "icon": "assets/images/level-icons/m37.svg",
+        "data": "data/levels/m37.json"
     }
 ]

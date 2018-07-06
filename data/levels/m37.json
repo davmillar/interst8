@@ -1,0 +1,13 @@
+{
+    "name": "M-37 (East Beltline)",
+    "type": "compose",
+    "puzzles": [
+        {
+            "word_clue": "An entertainment venue",
+            "answer": "ARCADE",
+            "state_1": "Arkansas",
+            "state_2": "California",
+            "state_3": "Delaware"
+        }
+    ]
+}
