@@ -1,14 +1,91 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: #308446;
+    background: #384;
     color: #fff;
     font-family: "overpassregular", sans-serif;
-    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
+
+.panel {
+    background: #384;
+    color: #fff;
+    display: block;
+    position: absolute;
+    transform: translate3d(0, 100%, 0);
+    transition: transform 1s ease;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.panel.active-panel {
+    transform: none;
+}
+
+.sign {
+    border: 0.15em solid;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0 0.15em 0.15em 0 rgba(0, 0, 0, .3);
+}
+
+.sign-list {
+    list-style-type: none;
+}
+
+.sign-list li {
+    display: block;
+    position: relative;
+    background: #384;
+    color: #fff;
+    margin: 0.5em;
+    min-height: 2.5em;
+}
+
+#levelList li {
+    padding-left: 3.5em;
+}
+
+#levelList li img {
+    position: absolute;
+    top: 0.65em;
+    left: 0.65em;
+    height: 2.5em;
+    margin-right: 0.5em;
+}
+
+.sign-list li h2 {
+    font-size: 1.3em;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    margin: 0 0 0.2em;
+    padding: 0;
+}
+
+.sign-list li p {
+    font-size: 0.8em;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 h1 {
     text-align: center;
     letter-spacing: 0.1em;
-
 }
 
 #logo {
@@ -20,12 +97,8 @@ h1 {
 noscript {
     display: block;
     width: 12em;
-    background: #ffcc00;
+    background: #fc0;
     color: #111;
-    border: 3px solid;
-    border-radius: 1em;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
     margin: 1em auto;
-    padding: 1em;
     text-align: center;
 }

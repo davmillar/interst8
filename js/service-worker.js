@@ -1,5 +1,5 @@
 // jshint esversion:6
-var CACHE_NAME = 'my-site-cache-v1',
+var CACHE_NAME = 'my-site-cache-v3',
     urlsToCache = [
       '/',
       '/assets/Overpass_Regular-webfont.eot',
