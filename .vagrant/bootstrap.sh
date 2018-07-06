@@ -19,4 +19,5 @@ fi
 service apache2 stop # > /dev/null
 echo "listen 4018" | sudo tee --append /etc/apache2/httpd.conf
 echo "ServerName localhost" | sudo tee --append /etc/apache2/httpd.conf
+echo "EnableSendfile off" | sudo tee --append /etc/apache2/httpd.conf
 service apache2 restart # > /dev/null
