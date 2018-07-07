@@ -1,4 +1,26 @@
+// jshint esversion:6
 (function (me) {
+    var levelTemplates = {
+        compose: function (puzzleData) {
+            return `
+                Find ${puzzleData.word_clue}
+                that is spelled using the abbreviations of
+                ${puzzleData.states.length} states.
+            `;
+        },
+        insert: function (puzzleData) {
+            return `insert.`;
+        },
+        swap: function (puzzleData) {
+            return `
+                Find ${puzzleData.word_1_clue}
+                that becomes ${puzzleData.word_2_clue}
+                when you replace ${puzzleData.state_1_clue}
+                with ${puzzleData.state_2_clue}.
+            `;
+        }
+    };
+
     me.levelListHolder = document.getElementById('levelList');
     me.levelViewHolder = document.getElementById('levelView');
 
@@ -72,10 +94,10 @@
             });
     };
 
-    me.parseLevelData = function (data) {
+    me.parseLevelData = function (levelData) {
         console.log('parseLevelData');
 
-        data.puzzles.forEach(function (puzzle) {
+        levelData.puzzles.forEach(function (puzzle) {
             var listItem = document.createElement('li');
             listItem.classList.add('sign');
 
@@ -88,7 +110,7 @@
             // listItem.appendChild(listItemTitle);
 
             var listItemDescription = document.createElement('p');
-            listItemDescription.textContent = JSON.stringify(puzzle);
+            listItemDescription.textContent = levelTemplates[levelData.type](puzzle);
             listItem.appendChild(listItemDescription);
 
             me.levelViewHolder.appendChild(listItem);
