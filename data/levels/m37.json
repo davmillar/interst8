@@ -3,11 +3,9 @@
     "type": "compose",
     "puzzles": [
         {
-            "word_clue": "An entertainment venue",
+            "word_clue": "an entertainment venue",
             "answer": "ARCADE",
-            "state_1": "Arkansas",
-            "state_2": "California",
-            "state_3": "Delaware"
+            "states": [ "Arkansas", "California", "Delaware" ]
         }
     ]
 }

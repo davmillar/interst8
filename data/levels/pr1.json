@@ -1,0 +1,12 @@
+{
+    "name": "Puerto Rico Highway 1",
+    "type": "insert",
+    "puzzles": [
+        {
+            "word_1_clue": "an activity",
+            "answer_1": "SING",
+            "word_2_clue": "a nice time of year",
+            "answer_2": "SPRING"
+        }
+    ]
+}

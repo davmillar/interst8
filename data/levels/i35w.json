@@ -4,11 +4,11 @@
     "puzzles": [
         {
             "pattern": "11000",
-            "word_1_clue": "An emergency tool",
-            "state_1_clue": "A coastal state",
+            "word_1_clue": "an emergency tool",
+            "state_1_clue": "a coastal state",
             "answer_1": "FLARE",
-            "word_2_clue": "A Halloween activity",
-            "state_2_clue_2": "Another coastal state",
+            "word_2_clue": "a Halloween activity",
+            "state_2_clue": "another coastal state",
             "answer_2": "SCARE"
         }
     ]
