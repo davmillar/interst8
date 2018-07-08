@@ -9,7 +9,11 @@
             `;
         },
         insert: function (puzzleData) {
-            return `insert.`;
+            return `
+                Find ${puzzleData.word_1_clue}
+                that becomes ${puzzleData.word_2_clue}
+                when you insert ${puzzleData.state_clue}.
+            `;
         },
         swap: function (puzzleData) {
             return `
