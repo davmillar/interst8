@@ -25,8 +25,8 @@
         }
     };
 
-    me.levelListHolder = document.getElementById('levelList');
-    me.levelViewHolder = document.getElementById('levelView');
+    var levelListHolder = document.getElementById('levelList');
+    var levelViewHolder = document.getElementById('levelView');
 
     me.init = function () {
         console.log('init');
@@ -73,10 +73,10 @@
 
             listItem.addEventListener('click', me.loadLevelData.bind(me, level.data));
 
-            me.levelListHolder.appendChild(listItem);
+            levelListHolder.appendChild(listItem);
         });
 
-        me.levelListHolder.classList.add('active-panel');
+        levelListHolder.classList.add('active-panel');
     };
 
     me.loadLevelData = function (dataPath) {
@@ -117,11 +117,11 @@
             listItemDescription.textContent = levelTemplates[levelData.type](puzzle);
             listItem.appendChild(listItemDescription);
 
-            me.levelViewHolder.appendChild(listItem);
+            levelViewHolder.appendChild(listItem);
         });
 
-        me.levelViewHolder.classList.add('active-panel');
-        me.levelListHolder.classList.remove('active-panel');
+        levelViewHolder.classList.add('active-panel');
+        levelListHolder.classList.remove('active-panel');
     };
 })(window.interst8 = window.interst8 || {});
 
