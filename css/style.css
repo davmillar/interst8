@@ -24,7 +24,7 @@ body {
     bottom: 0;
     right: auto;
     height: auto;
-    width: 100%;
+    // width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -53,18 +53,6 @@ body {
     min-height: 2.5em;
 }
 
-#levelList li {
-    padding-left: 3.5em;
-}
-
-#levelList li img {
-    position: absolute;
-    top: 0.65em;
-    left: 0.65em;
-    height: 2.5em;
-    margin-right: 0.5em;
-}
-
 .sign-list li h2 {
     font-size: 1.3em;
     letter-spacing: 0.08em;
@@ -80,8 +68,25 @@ body {
     padding: 0;
 }
 
+#levelList li {
+    padding-left: 3.5em;
+}
 
+#levelList li img {
+    position: absolute;
+    top: 0.65em;
+    left: 0.65em;
+    height: 2.5em;
+    margin-right: 0.5em;
+}
 
+#levelView {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+}
+
+#levelView li {
+}
 
 h1 {
     text-align: center;
@@ -101,4 +106,19 @@ noscript {
     color: #111;
     margin: 1em auto;
     text-align: center;
+}
+
+@media only screen and (min-width: 40em) {
+    #levelList {
+        width: 20em;
+        right: auto;
+    }
+
+    #levelView {
+        left: 20em;
+    }
+
+    .panel {
+        transform: none;
+    }
 }
