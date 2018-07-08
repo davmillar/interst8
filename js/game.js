@@ -101,6 +101,8 @@
     me.parseLevelData = function (levelData) {
         console.log('parseLevelData');
 
+        levelViewHolder.innerHTML = '';
+
         levelData.puzzles.forEach(function (puzzle) {
             var listItem = document.createElement('li');
             listItem.classList.add('sign');
