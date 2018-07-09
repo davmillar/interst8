@@ -6,16 +6,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
         <meta name="description" content="Curated collection of word riddles using U.S. state abbreviations. Created by puzzle author David Millar.">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+
         <title>Interst8</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/overpass.css" type="text/css">
         <link rel="manifest" href="manifest.json">
+        <link rel="icon" sizes="192x192" href="assets/images/logo-with-bg.png">
+        <link rel="icon" sizes="128x128" href="assets/images/logo-with-bg.png">
+        <link rel="apple-touch-icon" sizes="128x128" href="assets/images/logo-with-bg.png">
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="assets/images/logo-with-bg.png">
     </head>
     <body>
-        <img src="assets/images/logo.svg" id="logo" alt="Shield logo for Interst8." />
-        <h1>Interst8</h1>
+        <header>
+            <button id="backBtn">Back</button>
+            <h1>Interst8</h1>
+            <button id="shareBtn">Share</button>
+        </header>
+
         <ul id="levelList" class="panel sign-list"></ul>
         <ul id="levelView" class="panel sign-list"></ul>
+
+        <img src="assets/images/logo.svg" id="logo" alt="Shield logo for Interst8." />
+
         <noscript class="sign">
             This game requires JavaScript to play.
         </noscript>

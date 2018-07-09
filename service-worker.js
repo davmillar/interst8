@@ -1,6 +1,6 @@
 // jshint esversion:6
 var me = self,
-    CACHE_NAME = 'interst8a',
+    CACHE_NAME = 'interst8c',
     urlsToCache = [
       '/',
       '/?utm_source=web_app_manifest',
@@ -14,7 +14,6 @@ var me = self,
       '/js/game.js',
       '/js/service-worker-handler.js',
       '/data/levels.json',
-      '/service-worker.js',
       '/manifest.json'
     ];
 

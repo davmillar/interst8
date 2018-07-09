@@ -25,11 +25,43 @@
         }
     };
 
-    var levelListHolder = document.getElementById('levelList');
-    var levelViewHolder = document.getElementById('levelView');
+    var doc = document;
+    var levelListHolder = doc.getElementById('levelList');
+    var levelViewHolder = doc.getElementById('levelView');
+
 
     me.init = function () {
         me.getLevelList();
+    };
+
+
+    var backButton = doc.getElementById('backBtn');
+
+    me.showMenu = function () {
+        console.log('show');
+        levelListHolder.classList.add('active-panel');
+        levelViewHolder.classList.remove('active-panel');
+    };
+
+    backButton.addEventListener('click', me.showMenu.bind(me));
+
+
+    var shareButton = doc.getElementById('shareBtn');
+
+    if (navigator.share) {
+        shareButton.addEventListener('click', me.shareApp.bind(me));
+    } else {
+        shareButton.style.visibility = 'hidden';
+    }
+
+    me.shareApp = function () {
+        navigator.share({
+            title: 'Interst8',
+            text: 'Check out Interst8, a curated collection of word puzzles using U.S. state abbreviations!',
+            url: 'https://interst8.us/?utm_source=web_app_share',
+        })
+        .then(() => console.log('Successful share.'))
+        .catch((error) => console.error('Error sharing:', error));
     };
 
     me.getLevelList = function () {
@@ -51,6 +83,8 @@
     };
 
     me.parseLevelList = function (data) {
+        levelListHolder.innerHTML = '';
+
         data.forEach(function (level) {
             var listItem = document.createElement('li');
             listItem.classList.add('sign');
@@ -73,7 +107,7 @@
             levelListHolder.appendChild(listItem);
         });
 
-        levelListHolder.classList.add('active-panel');
+        me.showMenu();
     };
 
     me.loadLevelData = function (dataPath) {
