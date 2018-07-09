@@ -4,16 +4,18 @@ html {
 }
 
 body {
-    background: #384;
+    background: #338542;
     color: #fff;
     font-family: "overpassregular", sans-serif;
+    font-display: swap;
+    font-size: 16px;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
 .panel {
-    background: #384;
+    background: #338542;
     color: #fff;
     display: block;
     position: absolute;
@@ -47,23 +49,22 @@ body {
 .sign-list li {
     display: block;
     position: relative;
-    background: #384;
+    background: #338542;
     color: #fff;
     margin: 0.5em;
     min-height: 2.5em;
 }
 
 .sign-list li h2 {
-    font-size: 1.3em;
+    font-size: 1.6em;
     letter-spacing: 0.08em;
     line-height: 1;
-    margin: 0 0 0.2em;
+    margin: 0.1em 0 0.4em;
     padding: 0;
 }
 
 .sign-list li p {
-    font-size: 0.8em;
-    line-height: 1.1;
+    line-height: 1.2;
     margin: 0;
     padding: 0;
 }

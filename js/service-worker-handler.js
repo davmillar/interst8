@@ -17,9 +17,10 @@ var _trackInstalling = function (worker) {
 
     _installServiceWorker = function () {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('js/service-worker.js').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          if (!navigator.serviceWorker.controller) {
+        var nav = navigator;
+
+        nav.serviceWorker.register('service-worker.js').then(function(registration) {
+          if (!nav.serviceWorker.controller) {
             return;
           }
 
@@ -42,7 +43,7 @@ var _trackInstalling = function (worker) {
 
         var refreshing;
 
-        navigator.serviceWorker.addEventListener('controllerchange', function() {
+        nav.serviceWorker.addEventListener('controllerchange', function() {
           if (refreshing) return;
           window.location.reload();
           refreshing = true;

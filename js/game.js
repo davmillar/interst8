@@ -29,12 +29,10 @@
     var levelViewHolder = document.getElementById('levelView');
 
     me.init = function () {
-        console.log('init');
         me.getLevelList();
     };
 
     me.getLevelList = function () {
-        console.log('getLevelList');
         fetch('data/levels.json')
             .then(
                 function(response) {
@@ -53,14 +51,13 @@
     };
 
     me.parseLevelList = function (data) {
-        console.log('parseLevelList');
-
         data.forEach(function (level) {
             var listItem = document.createElement('li');
             listItem.classList.add('sign');
 
             var listItemImage = document.createElement('img');
             listItemImage.src = level.icon;
+            listItemImage.alt = `Level icon for ${level.name}.`;
             listItem.appendChild(listItemImage);
 
             var listItemTitle = document.createElement('h2');
@@ -80,7 +77,6 @@
     };
 
     me.loadLevelData = function (dataPath) {
-        console.log('loadLevelData');
         fetch(dataPath)
             .then(
                 function(response) {
@@ -99,8 +95,6 @@
     };
 
     me.parseLevelData = function (levelData) {
-        console.log('parseLevelData');
-
         levelViewHolder.innerHTML = '';
 
         levelData.puzzles.forEach(function (puzzle) {
