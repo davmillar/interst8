@@ -6,6 +6,16 @@
             "word_clue": "an entertainment venue",
             "answer": "ARCADE",
             "states": [ "Arkansas", "California", "Delaware" ]
+        },
+        {
+            "word_clue": "a long timespan",
+            "answer": "DECADE",
+            "states": [ "Delaware", "California", "Delaware" ]
+        },
+        {
+            "word_clue": "a snacking nut",
+            "answer": "ALMOND",
+            "states": [ "Alabama", "Missouri", "North Dakota" ]
         }
     ]
 }
