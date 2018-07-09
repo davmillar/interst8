@@ -1,0 +1,39 @@
+{
+    "name": "Interst8",
+    "short_name": "Interst8",
+    "lang": "en-US",
+    "start_url": "/?utm_source=web_app_manifest",
+    "display": "standalone",
+    "background_color": "#308446",
+    "theme_color": "#308446",
+    ​​"orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/images/logo.png",
+            "sizes": "192x192 200x200",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/logo-with-bg.png",
+            "sizes": "152x152 180x180 200x200",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/logo-with-bg-single-color.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/logo.svg",
+            "sizes": "400x400"
+        },
+        {
+            "src": "assets/images/logo-with-bg.svg",
+            "sizes": "400x400"
+        },
+        {
+            "src": "assets/images/logo-with-bg-single-color.svg",
+            "sizes": "144x144"
+        },
+    ]
+}
