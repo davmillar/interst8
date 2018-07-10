@@ -1,5 +1,10 @@
 // jshint esversion:6
 (function (me) {
+    var levelListHolder = document.getElementById('levelList');
+    var levelViewHolder = document.getElementById('levelView');
+    var backButton = document.getElementById('backBtn');
+    var shareButton = document.getElementById('shareBtn');
+
     var levelTemplates = {
         compose: function (puzzleData) {
             return `
@@ -25,34 +30,23 @@
         }
     };
 
-    var doc = document;
-    var levelListHolder = doc.getElementById('levelList');
-    var levelViewHolder = doc.getElementById('levelView');
-
-
     me.init = function () {
+        backButton.addEventListener('click', me.showMenu.bind(me));
+
+        if (navigator.share) {
+            shareButton.addEventListener('click', me.shareApp.bind(me));
+        } else {
+            shareButton.style.visibility = 'hidden';
+        }
+
         me.getLevelList();
     };
-
-
-    var backButton = doc.getElementById('backBtn');
 
     me.showMenu = function () {
         console.log('show');
         levelListHolder.classList.add('active-panel');
         levelViewHolder.classList.remove('active-panel');
     };
-
-    backButton.addEventListener('click', me.showMenu.bind(me));
-
-
-    var shareButton = doc.getElementById('shareBtn');
-
-    if (navigator.share) {
-        shareButton.addEventListener('click', me.shareApp.bind(me));
-    } else {
-        shareButton.style.visibility = 'hidden';
-    }
 
     me.shareApp = function () {
         navigator.share({
@@ -63,6 +57,7 @@
         .then(() => console.log('Successful share.'))
         .catch((error) => console.error('Error sharing:', error));
     };
+
 
     me.getLevelList = function () {
         fetch('data/levels.json')
