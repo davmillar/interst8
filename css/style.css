@@ -33,7 +33,12 @@ header button {
     background: transparent;
     color: inherit;
     border: 0;
-    -webkit-tap-highlight-color: hsl(131, 45%, 36%);
+    -webkit-tap-highlight-color: hsl(131, 45%, 26%);
+    cursor: pointer;
+}
+
+header button:hover {
+    background: hsl(131, 45%, 26%);
 }
 
 .panel {
@@ -60,10 +65,23 @@ header button {
 }
 
 .sign {
+    position: relative;
     border: 0.15em solid;
     border-radius: 1em;
     padding: 1em;
-    box-shadow: 0 0.15em 0.15em 0 hsl(131, 45%, 26%);
+    box-shadow: 0 0.15em 0.15em 0 rgba(0, 0, 0, 0.2);
+}
+
+.sign::before {
+    content: '';
+    position: absolute;
+    top: -0.15em;
+    left: -0.15em;
+    right: -0.15em;
+    bottom: -0.15em;
+    background: hsl(131, 45%, 36%);
+    border: 0.15em solid hsl(131, 45%, 36%);
+    z-index: -10;
 }
 
 .sign-list {
@@ -85,17 +103,41 @@ header button {
     line-height: 1;
     margin: 0.1em 0 0.4em;
     padding: 0;
+    z-index: 6;
 }
 
 .sign-list li p {
     line-height: 1.2;
     margin: 0;
     padding: 0;
+    z-index: 6;
+}
+
+#levelList {
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            transparent 15%,
+            rgba(162,162,162,1) 15%,
+            rgba(162,162,162,1) 20%,
+            transparent 20%,
+            transparent 80%,
+            rgba(162,162,162,1) 80%,
+            rgba(162,162,162,1) 85%,
+            transparent 85%,
+            transparent 100%),
+        linear-gradient(0deg,
+            rgba(45,255,221,1) 0%, rgba(51,165,255,1) 48%, rgba(0,155,255,1) 100%);
 }
 
 #levelList li {
     padding-left: 3.5em;
-    -webkit-tap-highlight-color: hsl(131, 45%, 36%);
+    -webkit-tap-highlight-color: hsl(131, 45%, 31%);
+    cursor: pointer;
+}
+
+#levelList li:hover {
+    background: hsl(131, 45%, 31%);
 }
 
 #levelList li img {
