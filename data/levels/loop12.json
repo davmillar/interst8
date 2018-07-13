@@ -1,0 +1,11 @@
+{
+    "name": "Texas Highway Loop 12",
+    "type": "double",
+    "puzzles": [
+        {
+            "word_clue": "a long timespan",
+            "state_clue": "a Mid-Atlantic state",
+            "answer": "DECADE"
+        }
+    ]
+}

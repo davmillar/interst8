@@ -19,5 +19,12 @@
         "description": "Discover words that transform into new words when PR is added to them.",
         "icon": "assets/images/level-icons/pr1.svg",
         "data": "data/levels/pr1.json"
+    },
+    {
+        "id": 4,
+        "name": "Texas Highway Loop 12",
+        "description": "Discover words that make use of a state's abbreviation twice.",
+        "icon": "assets/images/level-icons/loop12.svg",
+        "data": "data/levels/loop12.json"
     }
 ]
