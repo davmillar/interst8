@@ -27,6 +27,12 @@
                 when you replace ${puzzleData.state_1_clue}
                 with ${puzzleData.state_2_clue}.
             `;
+        },
+        double: function (puzzleData) {
+            return `
+                Find ${puzzleData.word_clue}
+                that contains ${puzzleData.state_clue} twice.
+            `;
         }
     };
 
