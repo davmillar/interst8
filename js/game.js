@@ -83,6 +83,7 @@
         data.forEach(function (level) {
             var listItem = document.createElement('li');
             listItem.classList.add('sign');
+            listItem.classList.add('icon-space');
 
             var listItemImage = document.createElement('img');
             listItemImage.src = level.icon;
@@ -101,6 +102,17 @@
 
             levelListHolder.appendChild(listItem);
         });
+
+        // var listItem = document.createElement('li');
+        // listItem.classList.add('sign');
+        // listItem.classList.add('blue-sign');
+
+        // var listItemTitle = document.createElement('h2');
+        // listItemTitle.textContent = 'Travel Info';
+        // listItemTitle.classList.add('center');
+        // listItem.appendChild(listItemTitle);
+
+        // levelListHolder.appendChild(listItem);
 
         me.showMenu();
     };
@@ -129,14 +141,6 @@
         levelData.puzzles.forEach(function (puzzle) {
             var listItem = document.createElement('li');
             listItem.classList.add('sign');
-
-            // var listItemImage = document.createElement('img');
-            // listItemImage.src = level.icon;
-            // listItem.appendChild(listItemImage);
-
-            // var listItemTitle = document.createElement('h2');
-            // listItemTitle.textContent = level.name;
-            // listItem.appendChild(listItemTitle);
 
             var listItemDescription = document.createElement('p');
             listItemDescription.textContent = levelTemplates[levelData.type](puzzle);
