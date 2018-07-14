@@ -9,17 +9,22 @@
     "icons": [
         {
             "src": "assets/images/logo-with-bg-single-color.png",
-            "sizes": "144x144",
+            "sizes": "200x200",
             "type": "image/png"
         },
         {
             "src": "assets/images/logo-with-bg.png",
-            "sizes": "152x152 180x180 200x200",
+            "sizes": "200x200",
             "type": "image/png"
         },
         {
             "src": "assets/images/logo.png",
             "sizes": "200x200",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/logo-512.png",
+            "sizes": "512x512",
             "type": "image/png"
         },
         {
@@ -36,18 +41,6 @@
             "src": "assets/images/logo-96.png",
             "sizes": "96x96",
             "type": "image/png"
-        },
-        {
-            "src": "assets/images/logo-with-bg-single-color.svg",
-            "sizes": "144x144"
-        },
-        {
-            "src": "assets/images/logo-with-bg.svg",
-            "sizes": "400x400"
-        },
-        {
-            "src": "assets/images/logo.svg",
-            "sizes": "96x96 144x144 192x192 400x400 512x512"
         }
     ]
 }
