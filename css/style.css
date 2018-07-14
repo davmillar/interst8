@@ -27,6 +27,7 @@ header {
     padding: 0;
     z-index: 10;
     display: flex;
+    user-select: none;
 }
 
 header button {
@@ -135,6 +136,7 @@ header button:hover {
             transparent 85%, transparent 100%),
         linear-gradient(0deg,
             rgb(45,255,221) 0%, rgb(51,165,255) 48%, rgb(0,155,255) 100%);
+    user-select: none;
 }
 
 .icon-space {
@@ -152,9 +154,6 @@ header button:hover {
 #levelView {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-}
-
-#levelView li {
 }
 
 .panel--blue {
