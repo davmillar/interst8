@@ -202,7 +202,7 @@ noscript {
         right: auto;
     }
 
-    #levelView {
+    #levelView, #aboutView {
         left: 20em;
     }
 
