@@ -65,12 +65,31 @@ header button:hover {
     z-index: 7;
 }
 
+.closed::after {
+    content: 'CLOSED';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%, -50%, 0) rotateZ(-10deg);
+    border: 0.15em solid;
+    padding: .4em .7em;
+    background: hsl(28, 100%, 50%);
+    color: #000;
+    box-shadow: 0 0.15em 0.15em 0 rgba(0, 0, 0, 0.2);
+}
+
 .sign {
     position: relative;
     border: 0.15em solid;
     border-radius: 1em;
     padding: 1em;
+    -webkit-tap-highlight-color: hsl(131, 45%, 31%);
+    background: hsl(131, 45%, 36%);
     box-shadow: 0 0.15em 0.15em 0 rgba(0, 0, 0, 0.2);
+}
+
+.sign:hover {
+    background: hsl(131, 45%, 31%);
 }
 
 .sign-list {
@@ -80,16 +99,10 @@ header button:hover {
 .sign-list li {
     display: block;
     position: relative;
-    -webkit-tap-highlight-color: hsl(131, 45%, 31%);
-    background: hsl(131, 45%, 36%);
     color: #fff;
     margin: 0.5em;
     min-height: 2em;
     cursor: pointer;
-}
-
-.sign-list li:hover {
-    background: hsl(131, 45%, 31%);
 }
 
 .sign-list li h2 {
@@ -115,18 +128,13 @@ header button:hover {
 #levelList {
     background:
         linear-gradient(90deg,
-            transparent 0%,
-            transparent 15%,
-            rgba(162,162,162,1) 15%,
-            rgba(162,162,162,1) 20%,
-            transparent 20%,
-            transparent 80%,
-            rgba(162,162,162,1) 80%,
-            rgba(162,162,162,1) 85%,
-            transparent 85%,
-            transparent 100%),
+            transparent 0%, transparent 15%,
+            #999 15%, #999 20%,
+            transparent 20%, transparent 80%,
+            #999 80%, #999 85%,
+            transparent 85%, transparent 100%),
         linear-gradient(0deg,
-            rgba(45,255,221,1) 0%, rgba(51,165,255,1) 48%, rgba(0,155,255,1) 100%);
+            rgb(45,255,221) 0%, rgb(51,165,255) 48%, rgb(0,155,255) 100%);
 }
 
 .icon-space {
@@ -149,12 +157,16 @@ header button:hover {
 #levelView li {
 }
 
-li.blue-sign {
+.panel--blue {
+    background: hsl(212, 100%, 26%);
+}
+
+.sign--blue {
     background: hsl(212, 100%, 26%);
     -webkit-tap-highlight-color: hsl(212, 100%, 16%);
 }
 
-li.blue-sign:hover {
+.sign--blue:hover {
     background: hsl(212, 100%, 16%);
 }
 

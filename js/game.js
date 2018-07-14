@@ -2,6 +2,7 @@
 (function (me) {
     var levelListHolder = document.getElementById('levelList');
     var levelViewHolder = document.getElementById('levelView');
+    var aboutView = document.getElementById('aboutView');
     var backButton = document.getElementById('backBtn');
     var shareButton = document.getElementById('shareBtn');
 
@@ -52,6 +53,14 @@
         console.log('show');
         levelListHolder.classList.add('active-panel');
         levelViewHolder.classList.remove('active-panel');
+        aboutView.classList.remove('active-panel');
+    };
+
+    me.showAbout = function () {
+        console.log('show');
+        levelListHolder.classList.remove('active-panel');
+        levelViewHolder.classList.remove('active-panel');
+        aboutView.classList.add('active-panel');
     };
 
     me.shareApp = function () {
@@ -88,8 +97,7 @@
 
         data.forEach(function (level) {
             var listItem = document.createElement('li');
-            listItem.classList.add('sign');
-            listItem.classList.add('icon-space');
+            listItem.classList.add('sign', 'icon-space');
 
             var listItemImage = document.createElement('img');
             listItemImage.src = level.icon;
@@ -109,16 +117,17 @@
             levelListHolder.appendChild(listItem);
         });
 
-        // var listItem = document.createElement('li');
-        // listItem.classList.add('sign');
-        // listItem.classList.add('blue-sign');
+        var listItem = document.createElement('li');
+        listItem.classList.add('sign', 'sign--blue');
 
-        // var listItemTitle = document.createElement('h2');
-        // listItemTitle.textContent = 'Travel Info';
-        // listItemTitle.classList.add('center');
-        // listItem.appendChild(listItemTitle);
+        var listItemTitle = document.createElement('h2');
+        listItemTitle.textContent = 'Travel Information';
+        listItemTitle.classList.add('center');
+        listItem.appendChild(listItemTitle);
 
-        // levelListHolder.appendChild(listItem);
+        listItem.addEventListener('click', me.showAbout);
+
+        levelListHolder.appendChild(listItem);
 
         me.showMenu();
     };
@@ -157,6 +166,7 @@
 
         levelViewHolder.classList.add('active-panel');
         levelListHolder.classList.remove('active-panel');
+        aboutView.classList.remove('active-panel');
     };
 })(window.interst8 = window.interst8 || {});
 
