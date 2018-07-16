@@ -4,8 +4,8 @@
     "lang": "en-US",
     "start_url": "/?utm_source=web_app_manifest",
     "display": "standalone",
-    "background_color": "hsl(131, 45%, 36%)",
-    "theme_color": "hsl(131, 45%, 36%)",
+    "background_color": "hsl(166, 100%, 22%)",
+    "theme_color": "hsl(166, 100%, 22%)",
     "icons": [
         {
             "src": "assets/images/logo-with-bg-single-color.png",

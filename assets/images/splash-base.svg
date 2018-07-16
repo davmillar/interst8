@@ -23,7 +23,7 @@
      id="defs2" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#338844"
+     pagecolor="#006e54"
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageopacity="1"
@@ -77,13 +77,13 @@
          id="path3726-7"
          transform="matrix(0.26458333,0,0,0.26458333,0,244.08332)"
          d="m 38.611328,15 c -1.216191,1.658443 -2.363068,3.327116 -3.476562,5 H 62.183594 C 54.181005,19.114772 46.844095,17.05819 38.611328,15 Z M 100,15 c -8.290949,2.763658 -15.363046,4.307496 -21.701172,5 H 121.70117 C 115.36305,19.307496 108.29095,17.763658 100,15 Z m 61.38867,0 c -8.23277,2.05819 -15.56968,4.114772 -23.57226,5 h 27.04882 c -1.11349,-1.672884 -2.26037,-3.341557 -3.47656,-5 z M 19.130859,55 C 3.2721063,114.70888 42.197151,173.43944 100,185 157.80285,173.43944 196.72789,114.70888 180.86914,55 Z"
-         style="fill:#338844;fill-opacity:1;stroke:none;stroke-width:0.94444424px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         style="fill:#006e54;fill-opacity:1;stroke:none;stroke-width:0.94444424px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       <path
          inkscape:connector-curvature="0"
          id="path3726-7-5"
          transform="matrix(0.26458333,0,0,0.26458333,0,244.08332)"
          d="M 38.611328,15 C 30.238693,26.417231 24.333869,38.202607 20.591797,50 H 179.4082 C 175.66613,38.202607 169.76131,26.417231 161.38867,15 142.49978,19.722217 128.33333,24.444472 100,15 71.66667,24.444472 57.500209,19.722217 38.611328,15 Z"
-         style="opacity:1;vector-effect:none;fill:#338844;fill-opacity:1;stroke:none;stroke-width:0.77975434;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
+         style="opacity:1;vector-effect:none;fill:#006e54;fill-opacity:1;stroke:none;stroke-width:0.77975434;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none" />
       <g
          id="text3838"
          style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
