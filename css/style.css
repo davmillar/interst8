@@ -169,6 +169,22 @@ header button:hover {
     background: hsl(212, 100%, 16%);
 }
 
+#aboutView ul {
+    text-align: left;
+}
+
+#aboutView ul a {
+    color: #fe9;
+}
+
+#aboutView ul a:hover {
+    color: #fd7;
+}
+
+#aboutView ul li {
+    margin: 0.2em;
+}
+
 h1 {
     text-align: center;
     letter-spacing: 0.1em;
