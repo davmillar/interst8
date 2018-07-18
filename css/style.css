@@ -84,12 +84,15 @@ header button:hover {
     border: 0.15em solid;
     border-radius: 1em;
     padding: 1em;
-    -webkit-tap-highlight-color: hsl(166, 100%, 17%);
     background: hsl(166, 100%,22%);
     box-shadow: 0 0.15em 0.15em 0 rgba(0, 0, 0, 0.2);
 }
 
-.sign:hover {
+.sign--link {
+    -webkit-tap-highlight-color: hsl(166, 100%, 17%);
+}
+
+.sign--link:hover {
     background: hsl(166, 100%, 17%);
 }
 
@@ -117,13 +120,48 @@ header button:hover {
 
 .sign-list li p {
     line-height: 1.2;
-    margin: 0.4em 0 0;
+    margin: 0;
     padding: 0;
     z-index: 6;
 }
 
+.sign-list li h2+p {
+    margin-top: 0.4em;
+}
+
 .center {
     text-align: center;
+}
+
+.hide--answer {
+    padding-bottom: 3em;
+}
+
+.sign-list li p.answer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.sign-list li p.answer.answer--hidden::after {
+    content: 'View Answer';
+    display: block;
+    position: absolute;
+    top: -0.15em;
+    bottom: -0.15em;
+    left: -0.15em;
+    right: -0.15em;
+    background: hsl(49, 97%, 54%);
+    color: #000;
+    padding: 0.5em;
+    border: 0.15em solid;
+    border-radius: 0 0 1em 1em;
+    z-index: 15;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #levelList {
@@ -143,7 +181,7 @@ header button:hover {
     padding-left: 3.5em;
 }
 
-#levelList li img {
+.icon-space img {
     position: absolute;
     top: 0.65em;
     left: 0.65em;
@@ -162,10 +200,13 @@ header button:hover {
 
 .sign--blue {
     background: hsl(212, 100%, 26%);
+}
+
+.sign--link.sign--blue{
     -webkit-tap-highlight-color: hsl(212, 100%, 16%);
 }
 
-.sign--blue:hover {
+.sign--link.sign--blue:hover {
     background: hsl(212, 100%, 16%);
 }
 

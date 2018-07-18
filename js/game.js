@@ -8,32 +8,54 @@
 
     var levelTemplates = {
         compose: function (puzzleData) {
-            return `
-                Find ${puzzleData.word_clue}
-                that is spelled using the abbreviations of
-                ${puzzleData.states.length} states.
-            `;
+            return {
+                question: `
+                    Find ${puzzleData.word_clue}
+                    that is spelled using the abbreviations of
+                    ${puzzleData.states.length} states.
+                `,
+                answer: `
+                    ${puzzleData.answer} (${puzzleData.states.join(', ')}).
+                `
+            };
         },
         insert: function (puzzleData) {
-            return `
-                Find ${puzzleData.word_1_clue}
-                that becomes ${puzzleData.word_2_clue}
-                when you insert ${puzzleData.state_clue}.
-            `;
+            return {
+                question: `
+                    Find ${puzzleData.word_1_clue}
+                    that becomes ${puzzleData.word_2_clue}
+                    when you insert ${puzzleData.state_clue}.
+                `,
+                answer: `
+                    ${puzzleData.answer_1} becomes
+                    ${puzzleData.answer_2}.
+                `
+            };
         },
         swap: function (puzzleData) {
-            return `
-                Find ${puzzleData.word_1_clue}
-                that becomes ${puzzleData.word_2_clue}
-                when you replace ${puzzleData.state_1_clue}
-                with ${puzzleData.state_2_clue}.
-            `;
+            return {
+                question: `
+                    Find ${puzzleData.word_1_clue}
+                    that becomes ${puzzleData.word_2_clue}
+                    when you replace ${puzzleData.state_1_clue}
+                    with ${puzzleData.state_2_clue}.
+                `,
+                answer: `
+                    ${puzzleData.answer_1} becomes
+                    ${puzzleData.answer_2}.
+                `
+            };
         },
         double: function (puzzleData) {
-            return `
-                Find ${puzzleData.word_clue}
-                that contains ${puzzleData.state_clue} twice.
-            `;
+            return {
+                question: `
+                    Find ${puzzleData.word_clue}
+                    that contains ${puzzleData.state_clue} twice.
+                `,
+                answer: `
+                    ${puzzleData.answer}
+                `
+            };
         }
     };
 
@@ -97,7 +119,7 @@
 
         data.forEach(function (level) {
             var listItem = document.createElement('li');
-            listItem.classList.add('sign', 'icon-space');
+            listItem.classList.add('sign', 'icon-space', 'sign--link');
 
             var listItemImage = document.createElement('img');
             listItemImage.src = level.icon;
@@ -118,7 +140,7 @@
         });
 
         var listItem = document.createElement('li');
-        listItem.classList.add('sign', 'sign--blue');
+        listItem.classList.add('sign', 'sign--link', 'sign--blue');
 
         var listItemTitle = document.createElement('h2');
         listItemTitle.textContent = 'Travel Information';
@@ -154,12 +176,20 @@
         levelViewHolder.innerHTML = '';
 
         levelData.puzzles.forEach(function (puzzle) {
+            var parsedPuzzleData = levelTemplates[levelData.type](puzzle);
             var listItem = document.createElement('li');
             listItem.classList.add('sign');
 
             var listItemDescription = document.createElement('p');
-            listItemDescription.textContent = levelTemplates[levelData.type](puzzle);
+            listItemDescription.textContent = parsedPuzzleData.question;
             listItem.appendChild(listItemDescription);
+
+            var listItemAnswer = document.createElement('p');
+            listItemAnswer.textContent = parsedPuzzleData.answer;
+            listItemAnswer.classList.add('answer', 'answer--hidden');
+            listItem.appendChild(listItemAnswer);
+
+            listItem.addEventListener('click', me.toggleAnswer.bind(me, listItemAnswer));
 
             levelViewHolder.appendChild(listItem);
         });
@@ -167,6 +197,10 @@
         levelViewHolder.classList.add('active-panel');
         levelListHolder.classList.remove('active-panel');
         aboutView.classList.remove('active-panel');
+    };
+
+    me.toggleAnswer = function (answerHolder) {
+        answerHolder.classList.toggle('answer--hidden');
     };
 })(window.interst8 = window.interst8 || {});
 
