@@ -114,6 +114,8 @@ header button:hover {
     min-height: 2em;
     cursor: pointer;
     margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .sign-list li h2 {
