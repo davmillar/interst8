@@ -56,10 +56,11 @@ header button:hover {
     height: auto;
     width: auto;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     z-index: 5;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
 }
 
 .panel.active-panel {
@@ -87,6 +88,7 @@ header button:hover {
     padding: 1em;
     background: hsl(166, 100%,22%);
     box-shadow: 0 0.15em 0.15em 0 rgba(0, 0, 0, 0.2);
+    break-inside: avoid;
 }
 
 .sign--link {
@@ -99,15 +101,20 @@ header button:hover {
 
 .sign-list {
     list-style-type: none;
+    margin: 0;
+    padding: 1em;
 }
 
 .sign-list li {
     display: block;
     position: relative;
     color: #fff;
-    margin: 0.5em;
     min-height: 2em;
     cursor: pointer;
+}
+
+.sign-list li+li {
+    margin-top: 1em;
 }
 
 .sign-list li h2 {
@@ -188,12 +195,6 @@ header button:hover {
     margin-right: 0.5em;
 }
 
-#levelView {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-    align-items: flex-start;
-}
-
 .panel--blue {
     background: hsl(212, 100%, 26%);
 }
@@ -254,13 +255,21 @@ noscript {
 }
 
 @media only screen and (min-width: 40em) {
+    body {
+        overflow: auto;
+    }
+
     #levelList {
         width: 20em;
         right: auto;
     }
 
-    #levelView, #aboutView {
+    #levelViewWrapper, #aboutView {
         left: 20em;
+    }
+
+    #levelView {
+        columns: 15em;
     }
 
     .panel {

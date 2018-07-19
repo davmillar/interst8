@@ -1,7 +1,8 @@
 // jshint esversion:6
 (function (me) {
-    var levelListHolder = document.getElementById('levelList');
-    var levelViewHolder = document.getElementById('levelView');
+    var levelList = document.getElementById('levelList');
+    var levelView = document.getElementById('levelView');
+    var levelViewWrapper = document.getElementById('levelViewWrapper');
     var aboutView = document.getElementById('aboutView');
     var backButton = document.getElementById('backBtn');
     var shareButton = document.getElementById('shareBtn');
@@ -72,16 +73,14 @@
     };
 
     me.showMenu = function () {
-        console.log('show');
-        levelListHolder.classList.add('active-panel');
-        levelViewHolder.classList.remove('active-panel');
+        levelList.classList.add('active-panel');
+        levelViewWrapper.classList.remove('active-panel');
         aboutView.classList.remove('active-panel');
     };
 
     me.showAbout = function () {
-        console.log('show');
-        levelListHolder.classList.remove('active-panel');
-        levelViewHolder.classList.remove('active-panel');
+        levelList.classList.remove('active-panel');
+        levelViewWrapper.classList.remove('active-panel');
         aboutView.classList.add('active-panel');
     };
 
@@ -115,7 +114,7 @@
     };
 
     me.parseLevelList = function (data) {
-        levelListHolder.innerHTML = '';
+        levelList.innerHTML = '';
 
         data.forEach(function (level) {
             var listItem = document.createElement('li');
@@ -136,7 +135,7 @@
 
             listItem.addEventListener('click', me.loadLevelData.bind(me, level.data));
 
-            levelListHolder.appendChild(listItem);
+            levelList.appendChild(listItem);
         });
 
         var listItem = document.createElement('li');
@@ -149,7 +148,7 @@
 
         listItem.addEventListener('click', me.showAbout);
 
-        levelListHolder.appendChild(listItem);
+        levelList.appendChild(listItem);
 
         me.showMenu();
     };
@@ -173,7 +172,7 @@
     };
 
     me.parseLevelData = function (levelData) {
-        levelViewHolder.innerHTML = '';
+        levelView.innerHTML = '';
 
         levelData.puzzles.forEach(function (puzzle) {
             var parsedPuzzleData = levelTemplates[levelData.type](puzzle);
@@ -191,11 +190,11 @@
 
             listItem.addEventListener('click', me.toggleAnswer.bind(me, listItemAnswer));
 
-            levelViewHolder.appendChild(listItem);
+            levelView.appendChild(listItem);
         });
 
-        levelViewHolder.classList.add('active-panel');
-        levelListHolder.classList.remove('active-panel');
+        levelViewWrapper.classList.add('active-panel');
+        levelList.classList.remove('active-panel');
         aboutView.classList.remove('active-panel');
     };
 
