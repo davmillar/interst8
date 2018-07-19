@@ -41,6 +41,14 @@
             "answer_2": "WIDEST",
             "state_clue": "a state known for potatoes",
             "state": "Idaho"
+        },
+        {
+            "word_1_clue": "one who deceives",
+            "answer_1": "LIAR",
+            "word_2_clue": "a type of equation",
+            "answer_2": "LINEAR",
+            "state_clue": "a plains state",
+            "state": "Nebraska"
         }
     ]
 }

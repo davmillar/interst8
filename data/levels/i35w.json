@@ -6,10 +6,45 @@
             "pattern": "11000",
             "word_1_clue": "an emergency tool",
             "state_1_clue": "a coastal state",
+            "state_1": "Florida",
             "answer_1": "FLARE",
             "word_2_clue": "a Halloween activity",
             "state_2_clue": "another coastal state",
+            "state_2": "South Carolina",
             "answer_2": "SCARE"
+        },
+        {
+            "pattern": "11000",
+            "word_1_clue": "an atmospheric condition",
+            "state_1_clue": "a Midwestern state",
+            "state_1": "Wisconsin",
+            "answer_1": "WINDY",
+            "word_2_clue": "a type of treat",
+            "state_2_clue": "a West coast state",
+            "state_2": "California",
+            "answer_2": "CANDY"
+        },
+        {
+            "pattern": "110000",
+            "word_1_clue": "an adjective for a car",
+            "state_1_clue": "an Appalachian Mountain state",
+            "state_1": "Pennsylvania",
+            "answer_1": "PARKED",
+            "word_2_clue": "an adjective for a wine bottle",
+            "state_2_clue": "a Rocky Mountain state",
+            "state_2": "Colorado",
+            "answer_2": "CORKED"
+        },
+        {
+            "pattern": "01100",
+            "word_1_clue": "a former MTV series",
+            "state_1_clue": "a small state",
+            "state_1": "Rhode Island",
+            "answer_1": "CRIBS",
+            "word_2_clue": "a dieter's no-no",
+            "state_2_clue": "a Mississippi River state",
+            "state_2": "Arkansas",
+            "answer_2": "CARBS"
         }
     ]
 }

@@ -54,7 +54,7 @@
                     that contains ${puzzleData.state_clue} twice.
                 `,
                 answer: `
-                    ${puzzleData.answer}
+                    ${puzzleData.answer} (${puzzleData.state}).
                 `
             };
         }

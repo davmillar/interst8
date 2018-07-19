@@ -5,12 +5,32 @@
         {
             "word_clue": "a long timespan",
             "state_clue": "a Mid-Atlantic state",
+            "state": "Delaware",
             "answer": "DECADE"
         },
         {
             "word_clue": "a major Florida city",
             "state_clue": "the Wolverine state",
+            "state": "Michigan",
             "answer": "MIAMI"
+        },
+        {
+            "word_clue": "something spoiled kids do",
+            "state_clue": "a Midwestern state",
+            "state": "Indiana",
+            "answer": "WHINING"
+        },
+        {
+            "word_clue": "a spy's activity",
+            "state_clue": "a coastal state",
+            "state": "Delaware",
+            "answer": "DECODE"
+        },
+        {
+            "word_clue": "a word that describes some necessities",
+            "state_clue": "the smallest state",
+            "state": "Rhode Island",
+            "answer": "CRITERIA"
         }
     ]
 }
