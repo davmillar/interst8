@@ -11,6 +11,11 @@
             "word_clue": "a snacking nut",
             "answer": "ALMOND",
             "states": [ "Alabama", "Missouri", "North Dakota" ]
+        },
+        {
+            "word_clue": "a seafood delicacy",
+            "answer": "CALAMARI",
+            "states": [ "California", "Louisiana", "Massachusetts", "Rhode Island" ]
         }
     ]
 }

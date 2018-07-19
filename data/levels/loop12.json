@@ -6,6 +6,11 @@
             "word_clue": "a long timespan",
             "state_clue": "a Mid-Atlantic state",
             "answer": "DECADE"
+        },
+        {
+            "word_clue": "a major Florida city",
+            "state_clue": "the Wolverine state",
+            "answer": "MIAMI"
         }
     ]
 }
