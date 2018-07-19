@@ -1,0 +1,46 @@
+{
+    "name": "U.S. Route 131",
+    "type": "insert",
+    "puzzles": [
+        {
+            "word_1_clue": "a term describing everything above the Earth's surface",
+            "answer_1": "SKY",
+            "word_2_clue": "a descriptor of barbecued foods",
+            "answer_2": "SMOKY",
+            "state_clue": "a state along the Mississippi River",
+            "state": "Missouri"
+        },
+        {
+            "word_1_clue": "another word for 'sing'",
+            "answer_1": "CROON",
+            "word_2_clue": "a salad component",
+            "answer_2": "CROUTON",
+            "state_clue": "a Mountain Time Zone state",
+            "state": "Utah"
+        },
+        {
+            "word_1_clue": "a storage place",
+            "answer_1": "SHED",
+            "word_2_clue": "another word for 'portioned'",
+            "answer_2": "SHARED",
+            "state_clue": "a state along the Ozark Mountains",
+            "state": "Arkansas"
+        },
+        {
+            "word_1_clue": "a playing card value",
+            "answer_1": "ACE",
+            "word_2_clue": "a type of angle",
+            "answer_2": "ACUTE",
+            "state_clue": "a Western state",
+            "state": "Utah"
+        },
+        {
+            "word_1_clue": "a cardinal direction",
+            "answer_1": "WEST",
+            "word_2_clue": "a superlative",
+            "answer_2": "WIDEST",
+            "state_clue": "a state known for potatoes",
+            "state": "Idaho"
+        }
+    ]
+}

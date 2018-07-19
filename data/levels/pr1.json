@@ -7,14 +7,16 @@
             "answer_1": "SING",
             "word_2_clue": "a nice time of year",
             "answer_2": "SPRING",
-            "state_clue": "Puerto Rico"
+            "state_clue": "Puerto Rico",
+            "state": "Puerto Rico"
         },
         {
             "word_1_clue": "an outlet",
             "answer_1": "SOCKET",
             "word_2_clue": "a chain-handling wheel",
             "answer_2": "SPROCKET",
-            "state_clue": "Puerto Rico"
+            "state_clue": "Puerto Rico",
+            "state": "Puerto Rico"
         }
     ]
 }
