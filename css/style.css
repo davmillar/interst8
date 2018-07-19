@@ -134,14 +134,12 @@ header button:hover {
 }
 
 .sign--answer {
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
 .sign-list li p.answer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative;
+    margin: 1em -1em -1em;
     padding: 0.5em;
     text-align: center;
 }
@@ -192,6 +190,7 @@ header button:hover {
 #levelView {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    align-items: flex-start;
 }
 
 .panel--blue {
