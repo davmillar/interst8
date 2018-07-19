@@ -59,6 +59,7 @@ header button:hover {
     padding: 0;
     z-index: 5;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .panel.active-panel {
@@ -176,7 +177,7 @@ header button:hover {
 }
 
 .icon-space {
-    padding-left: 3.5em;
+    padding-left: 4em;
 }
 
 .icon-space img {
@@ -211,6 +212,7 @@ header button:hover {
 
 #aboutView ul {
     text-align: left;
+    margin-right: 0.5em;
 }
 
 #aboutView ul a {
@@ -267,5 +269,11 @@ noscript {
 
     #backBtn {
         visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    body {
+        font-size: 20px;
     }
 }
