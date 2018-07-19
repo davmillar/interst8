@@ -178,7 +178,7 @@
         levelData.puzzles.forEach(function (puzzle) {
             var parsedPuzzleData = levelTemplates[levelData.type](puzzle);
             var listItem = document.createElement('li');
-            listItem.classList.add('sign');
+            listItem.classList.add('sign', 'sign--answer');
 
             var listItemDescription = document.createElement('p');
             listItemDescription.textContent = parsedPuzzleData.question;
