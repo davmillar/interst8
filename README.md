@@ -1,15 +1,15 @@
 Interst8
---------
+========
 
 About
-=====
+-----
 
 Interst8 is a Progressive Web App for displaying riddles that use abbreviations of U.S. states in their answers.
 
 Interst8 is created by [David Millar](https://davesgoesthedistance.com).
 
 Licenses
-========
+--------
 
 Interst8 and its source code are copyrighted by the author, David Millar, 2018, and licensed under **GNU General Public License v3**. See LICENSE.txt for more details.
 
@@ -17,7 +17,7 @@ The typeface used, **Overpass**, is copyrighted by Red Hat, Inc., 2011, and is l
 
 
 Reference
-=========
+---------
 
 Colors used are taken from the [Wikimedia Commons page](https://commons.wikimedia.org/wiki/Category:PD_MUTCD) listing MUTCD Pantone colors and RGB equivalents, converted to HSL in many cases in the stylesheet:
 
