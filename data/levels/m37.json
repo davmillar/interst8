@@ -16,6 +16,51 @@
             "word_clue": "a seafood delicacy",
             "answer": "CALAMARI",
             "states": [ "California", "Louisiana", "Massachusetts", "Rhode Island" ]
+        },
+        {
+            "word_clue": "a petty criminal",
+            "answer": "VANDAL",
+            "states": [ "Virginia", "North Dakota", "Alabama" ]
+        },
+        {
+            "word_clue": "a sweet liquid",
+            "answer": "NECTAR",
+            "states": [ "Nebraska", "Connecticut", "Arkansas" ]
+        },
+        {
+            "word_clue": "a member of a branch of military",
+            "answer": "MARINE",
+            "states": [ "Massachusetts", "Rhode Island", "Nebraska" ]
+        },
+        {
+            "word_clue": "a place you might find a canary",
+            "answer": "COALMINE",
+            "states": [ "Colorado", "Alabama", "Michigan", "Nebraska" ]
+        },
+        {
+            "word_clue": "a small citrus fruit",
+            "answer": "MANDARIN",
+            "states": [ "Massachusetts", "North Dakota", "Arkansas", "Indiana" ]
+        },
+        {
+            "word_clue": "a monument or dedication",
+            "answer": "MEMORIAL",
+            "states": [ "Maine", "Missouri", "Rhode Island", "Alabama" ]
+        },
+        {
+            "word_clue": "a term describing the majority of the United States",
+            "answer": "MAINLAND",
+            "states": [ "Massachusetts", "Indiana", "Louisiana", "North Dakota" ]
+        },
+        {
+            "word_clue": "a moon of Jupiter",
+            "answer": "GANYMEDE",
+            "states": [ "Georgia", "New York", "Maine", "Delaware" ]
+        },
+        {
+            "word_clue": "a wartime device",
+            "answer": "LANDMINE",
+            "states": [ "Louisiana", "North Dakota", "Michigan", "Nebraska" ]
         }
     ]
 }
