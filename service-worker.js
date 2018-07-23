@@ -1,6 +1,6 @@
 // jshint esversion:6
 var me = self,
-    CACHE_NAME = 'interst8t',
+    CACHE_NAME = 'interst8u',
     urlsToCache = [
         '/',
         '/?utm_source=web_app_manifest',
@@ -59,6 +59,12 @@ function precache() {
                 });
 
                 urlsToCache = urlsToCache.concat(levelDataFiles);
+
+                var levelIconFiles = levelManifest.map(function (levelData) {
+                    return levelData.icon;
+                });
+
+                urlsToCache = urlsToCache.concat(levelIconFiles);
 
                 return cache.addAll(urlsToCache);
             });
