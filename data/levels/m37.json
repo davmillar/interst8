@@ -61,6 +61,16 @@
             "word_clue": "a wartime device",
             "answer": "LANDMINE",
             "states": [ "Louisiana", "North Dakota", "Michigan", "Nebraska" ]
+        },
+        {
+            "word_clue": "the surname of a famous nonviolent activist",
+            "answer": "GANDHI",
+            "states": [ "Georgia", "North Dakota", "Hawaii" ]
+        },
+        {
+            "word_clue": "a word (plural) for the descriptors of people from specific places",
+            "answer": "DEMONYMS",
+            "states": [ "Delaware", "Missouri", "New York", "Mississippi" ]
         }
     ]
 }
