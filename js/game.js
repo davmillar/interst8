@@ -12,8 +12,8 @@
             return {
                 question: `
                     Find ${puzzleData.word_clue}
-                    that is spelled using the abbreviations of
-                    ${puzzleData.states.length} states.
+                    that is spelled using
+                    ${puzzleData.states.length} state abbreviations.
                 `,
                 answer: `
                     ${puzzleData.answer} (${puzzleData.states.join(', ')}).
