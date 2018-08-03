@@ -33,5 +33,12 @@
         "description": "Discover words that transform into new words when a state is added to them.",
         "icon": "assets/images/level-icons/us131.svg",
         "data": "data/levels/us131.json"
+    },
+    {
+        "id": 6,
+        "name": "Farm to Market Rd. 1938",
+        "description": "Discover phrases that are made by putting together state abbreviations.",
+        "icon": "assets/images/level-icons/fm1938.svg",
+        "data": "data/levels/fm1938.json"
     }
 ]

@@ -1,0 +1,36 @@
+{
+    "name": "Farm to Market Road 1938",
+    "type": "compose",
+    "puzzles": [
+        {
+            "word_clue": "a two-word phrase someone may use to describe a feeling of rejuvenation",
+            "answer": "NEW AGAIN",
+            "states": [ "Nebraska", "Washington", "Georgia", "Indiana" ]
+        },
+        {
+            "word_clue": "a two-word phrase for something highly desired",
+            "answer": "IN DEMAND",
+            "states": [ "Indiana", "Delaware", "Massachusetts", "North Dakota" ]
+        },
+        {
+            "word_clue": "a two-word phrase for a dangerous business exchange",
+            "answer": "ARMS DEAL",
+            "states": [ "Arkansas", "Mississippi", "Delaware", "Alabama" ]
+        },
+        {
+            "word_clue": "a two-word phrase meaning to approach",
+            "answer": "COME NEAR",
+            "states": [ "Colorado", "Maine", "Nebraska", "Arkansas" ]
+        },
+        {
+            "word_clue": "a soft drink brand",
+            "answer": "COCA-COLA",
+            "states": [ "Colorado", "California", "Colorado", "Louisiana" ]
+        },
+        {
+            "word_clue": "a two-word phrase for a video game setting",
+            "answer": "ARCADE MODE",
+            "states": [ "Arkansas", "California", "Delaware", "Missouri", "Delaware" ]
+        }
+    ]
+}
