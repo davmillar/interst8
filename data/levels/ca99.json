@@ -13,6 +13,18 @@
             "state_1": "Missouri",
             "state_2_clue": "another state bordering Illinois",
             "state_2": "Indiana"
+        },
+        {
+            "word_1_clue": "the start of a boat name",
+            "answer_1": "SS",
+            "word_2_clue": "an old gaming console",
+            "answer_2": "SNES",
+            "word_3_clue": "baked goods",
+            "answer_3": "SCONES",
+            "state_1_clue": "a tornado alley state",
+            "state_1": "Nebraska",
+            "state_2_clue": "a Rocky Mountain state",
+            "state_2": "Colorado"
         }
     ]
 }

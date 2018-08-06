@@ -71,6 +71,11 @@
             "word_clue": "a word (plural) for the descriptors of people from specific places",
             "answer": "DEMONYMS",
             "states": [ "Delaware", "Missouri", "New York", "Mississippi" ]
+        },
+        {
+            "word_clue": "a word that might describe a fragrance",
+            "answer": "FLORAL",
+            "states": [ "Florida", "Oregon", "Alabama" ]
         }
     ]
 }

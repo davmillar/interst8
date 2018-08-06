@@ -49,6 +49,22 @@
             "answer_2": "LINEAR",
             "state_clue": "a plains state",
             "state": "Nebraska"
+        },
+        {
+            "word_1_clue": "an annoying bug",
+            "answer_1": "FLY",
+            "word_2_clue": "a descriptor of a pie crust",
+            "answer_2": "FLAKY",
+            "state_clue": "a state bordering Canada",
+            "state": "Alaska"
+        },
+        {
+            "word_1_clue": "another word for 'pal'",
+            "answer_1": "BUD",
+            "word_2_clue": "a descriptor of body type",
+            "answer_2": "BUILD",
+            "state_clue": "a state along the Great Lakes",
+            "state": "Illinois"
         }
     ]
 }
