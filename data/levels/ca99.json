@@ -1,0 +1,18 @@
+{
+    "name": "California Highway 99",
+    "type": "insert-three",
+    "puzzles": [
+        {
+            "word_1_clue": "an action word",
+            "answer_1": "DO",
+            "word_2_clue": "a Japanese word for 'thanks'",
+            "answer_2": "DOMO",
+            "word_3_clue": "a game piece",
+            "answer_3": "DOMINO",
+            "state_1_clue": "a state bordering Illinois",
+            "state_1": "Missouri",
+            "state_2_clue": "another state bordering Illinois",
+            "state_2": "Indiana"
+        }
+    ]
+}

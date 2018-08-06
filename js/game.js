@@ -33,6 +33,22 @@
                 `
             };
         },
+        'insert-three': function (puzzleData) {
+            return {
+                question: `
+                    Find ${puzzleData.word_1_clue}
+                    that becomes ${puzzleData.word_2_clue}
+                    when you insert ${puzzleData.state_1_clue},
+                    and becomes ${puzzleData.word_3_clue}
+                    when you insert ${puzzleData.state_2_clue}.
+                `,
+                answer: `
+                    ${puzzleData.answer_1} becomes
+                    ${puzzleData.answer_2} becomes
+                    ${puzzleData.answer_3}.
+                `
+            };
+        },
         swap: function (puzzleData) {
             return {
                 question: `

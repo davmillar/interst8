@@ -40,5 +40,12 @@
         "description": "Discover phrases that are made by putting together state abbreviations.",
         "icon": "assets/images/level-icons/fm1938.svg",
         "data": "data/levels/fm1938.json"
+    },
+    {
+        "id": 7,
+        "name": "California Highway 99",
+        "description": "Discover trios of words where each adds a new state abbreviation to build on the last.",
+        "icon": "assets/images/level-icons/ca99.svg",
+        "data": "data/levels/ca99.json"
     }
 ]
