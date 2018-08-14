@@ -31,6 +31,18 @@
             "state_clue": "the smallest state",
             "state": "Rhode Island",
             "answer": "CRITERIA"
+        },
+        {
+            "word_clue": "another word for something that is second-nature",
+            "state_clue": "'The Crossroads of America'",
+            "state": "Indiana",
+            "answer": "INGRAINED"
+        },
+        {
+            "word_clue": "a work of art",
+            "state_clue": "a state bordering Lake Michigan",
+            "state": "Indiana",
+            "answer": "PAINTING"
         }
     ]
 }
