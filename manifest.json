@@ -6,6 +6,12 @@
     "display": "standalone",
     "background_color": "hsl(166, 100%, 22%)",
     "theme_color": "hsl(166, 100%, 22%)",
+    "description": "Curated collection of word riddles using U.S. state abbreviations. Created by puzzle author David Millar.",
+    "categories": [
+        "games",
+        "education",
+        "puzzles"
+    ],
     "icons": [
         {
             "src": "assets/images/logo-with-bg-single-color.png",
