@@ -45,7 +45,7 @@
         "id": 7,
         "name": "California State Route 99",
         "description": "Discover trios of words where each adds a new state abbreviation to build on the last.",
-        "icon": "assets/images/level-icons/ca99.svg",
+        "icon": "assets/images/level-icons/ca99.png",
         "data": "data/levels/ca99.json"
     }
 ]
