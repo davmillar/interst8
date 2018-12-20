@@ -45,6 +45,17 @@
             "state_2_clue": "a Mississippi River state",
             "state_2": "Arkansas",
             "answer_2": "CARBS"
+        },
+        {
+            "pattern": "01100",
+            "word_1_clue": "a brace or clamp",
+            "state_1_clue": "a Gulf Coast state",
+            "state_1": "Louisiana",
+            "answer_1": "CLAMP",
+            "word_2_clue": "a folded or pleated edge",
+            "state_2_clue": "an Atlantic coast state",
+            "state_2": "Rhode Island",
+            "answer_2": "CRIMP"
         }
     ]
 }

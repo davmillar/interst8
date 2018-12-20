@@ -1,0 +1,42 @@
+{
+    "name": "California State Route 99",
+    "type": "insert-three",
+    "puzzles": [
+        {
+            "word_1_clue": "an action word",
+            "answer_1": "DO",
+            "word_2_clue": "a Japanese word for 'thanks'",
+            "answer_2": "DOMO",
+            "word_3_clue": "a game piece",
+            "answer_3": "DOMINO",
+            "state_1_clue": "a state bordering Illinois",
+            "state_1": "Missouri",
+            "state_2_clue": "another state bordering Illinois",
+            "state_2": "Indiana"
+        },
+        {
+            "word_1_clue": "the start of a boat name",
+            "answer_1": "SS",
+            "word_2_clue": "an old gaming console",
+            "answer_2": "SNES",
+            "word_3_clue": "baked goods",
+            "answer_3": "SCONES",
+            "state_1_clue": "a tornado alley state",
+            "state_1": "Nebraska",
+            "state_2_clue": "a Rocky Mountain state",
+            "state_2": "Colorado"
+        },
+        {
+            "word_1_clue": "something a fish may produce",
+            "answer_1": "ROE",
+            "word_2_clue": "a synonym for highway",
+            "answer_2": "ROUTE",
+            "word_3_clue": "another word for 'performance'",
+            "answer_3": "ROUTINE",
+            "state_1_clue": "a western state",
+            "state_1": "Utah",
+            "state_2_clue": "a midwestern state",
+            "state_2": "Indiana"
+        }
+    ]
+}
