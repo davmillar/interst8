@@ -56,6 +56,39 @@
             "state_2_clue": "an Atlantic coast state",
             "state_2": "Rhode Island",
             "answer_2": "CRIMP"
+        },
+        {
+            "pattern": "110000",
+            "word_1_clue": "a job for an electrician",
+            "state_1_clue": "a state known for cheeses",
+            "state_1": "Wisconsin",
+            "answer_1": "WIRING",
+            "word_2_clue": "a job for human resources",
+            "state_2_clue": "a state known for beaches",
+            "state_2": "Hawaii",
+            "answer_2": "HIRING"
+        },
+        {
+            "pattern": "00110",
+            "word_1_clue": "a part of the human body",
+            "state_1_clue": "a Midwestern state",
+            "state_1": "Indiana",
+            "answer_1": "SPINE",
+            "word_2_clue": "a backup",
+            "state_2_clue": "a state along the Ozark Mountains",
+            "state_2": "Arkansas",
+            "answer_2": "SPARE"
+        },
+        {
+            "pattern": "011000",
+            "word_1_clue": "another word for 'haggle'",
+            "state_1_clue": "a state bordering Arizona",
+            "state_1": "Arkansas",
+            "answer_1": "BARTER",
+            "word_2_clue": "a dairy product",
+            "state_2_clue": "a state bordering Texas",
+            "state_2": "Utah",
+            "answer_2": "BUTTER"
         }
     ]
 }
