@@ -92,12 +92,14 @@
         levelList.classList.add('active-panel');
         levelViewWrapper.classList.remove('active-panel');
         aboutView.classList.remove('active-panel');
+        shareButton.classList.add('button-hidden');
     };
 
     me.showAbout = function () {
         levelList.classList.remove('active-panel');
         levelViewWrapper.classList.remove('active-panel');
         aboutView.classList.add('active-panel');
+        shareButton.classList.remove('button-hidden');
     };
 
     me.shareApp = function () {
@@ -212,6 +214,8 @@
         levelViewWrapper.classList.add('active-panel');
         levelList.classList.remove('active-panel');
         aboutView.classList.remove('active-panel');
+        aboutView.classList.remove('active-panel');
+        shareButton.classList.remove('button-hidden');
     };
 
     me.toggleAnswer = function (answerHolder) {
