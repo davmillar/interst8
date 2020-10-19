@@ -16,12 +16,22 @@
         {
             "src": "assets/images/logo-with-bg-single-color.png",
             "sizes": "200x200",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "maskable"
         },
         {
             "src": "assets/images/logo-with-bg.png",
             "sizes": "200x200",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "assets/images/logo-with-bg-single-color.svg",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "assets/images/logo-with-bg.svg",
+            "type": "image/svg+xml"
         },
         {
             "src": "assets/images/logo.png",
