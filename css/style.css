@@ -81,7 +81,7 @@ header button:hover {
     box-sizing: border-box;
 }
 
-.active-panel .panel {
+.panel.active-panel {
     transform: none;
     z-index: 7;
 }
