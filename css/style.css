@@ -22,7 +22,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    height: 3em;
+    height: 3rem;
     margin: 0;
     padding: 0;
     z-index: 10;
@@ -36,6 +36,20 @@ header button {
     border: 0;
     -webkit-tap-highlight-color: hsl(166, 100%, 12%);
     cursor: pointer;
+    text-indent: -1000em;
+    font-size: 0;
+    color: transparent;
+    width: 3rem;
+}
+
+#backBtn {
+    background: url(../assets/images/back-arrow.svg) no-repeat 50% 50%;
+    background-size: 70%;
+}
+
+#shareBtn {
+    background: url(../assets/images/share-icon.svg) no-repeat 50% 50%;
+    background-size: 70%;
 }
 
 header button:hover {
