@@ -65,6 +65,14 @@
             "answer_2": "BUILD",
             "state_clue": "a state along the Great Lakes",
             "state": "Illinois"
+        },
+        {
+            "word_1_clue": "Barbie's partner " ,
+            "answer_1": "KEN",
+            "word_2_clue": "a rude and entitled person",
+            "answer_2": "KAREN",
+            "state_clue": "a state bordering Texas",
+            "state": "Arkansas"
         }
     ]
 }

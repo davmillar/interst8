@@ -1,22 +1,25 @@
 // jshint esversion:6
 (function (me) {
-    var levelList = document.getElementById('levelList');
-    var levelView = document.getElementById('levelView');
-    var levelViewWrapper = document.getElementById('levelViewWrapper');
-    var aboutView = document.getElementById('aboutView');
-    var backButton = document.getElementById('backBtn');
-    var shareButton = document.getElementById('shareBtn');
+    const levelList = document.getElementById('levelList');
+    const levelView = document.getElementById('levelView');
+    const levelViewWrapper = document.getElementById('levelViewWrapper');
+    const aboutView = document.getElementById('aboutView');
+    const backButton = document.getElementById('backBtn');
+    const shareButton = document.getElementById('shareBtn');
+    
+    const enumerate = str => str.replace(/[a-z]+/gi, m => m.length);
 
-    var levelTemplates = {
+    const levelTemplates = {
         compose: function (puzzleData) {
             return {
                 question: `
                     Find ${puzzleData.word_clue}
+                    (${enumerate(puzzleData.answer)})
                     that is spelled using
                     ${puzzleData.states.length} state abbreviations.
                 `,
                 answer: `
-                    ${puzzleData.answer} (${puzzleData.states.join(', ')}).
+                    ${puzzleData.answer.toUpperCase()} (${puzzleData.states.join(', ')}).
                 `
             };
         },
@@ -24,12 +27,14 @@
             return {
                 question: `
                     Find ${puzzleData.word_1_clue}
+                    (${puzzleData.answer_1.length})
                     that becomes ${puzzleData.word_2_clue}
+                    (${puzzleData.answer_2.length})
                     when you insert ${puzzleData.state_clue}.
                 `,
                 answer: `
-                    ${puzzleData.answer_1} becomes
-                    ${puzzleData.answer_2}.
+                    ${puzzleData.answer_1.toUpperCase()} becomes
+                    ${puzzleData.answer_2.toUpperCase()}.
                 `
             };
         },
@@ -37,15 +42,18 @@
             return {
                 question: `
                     Find ${puzzleData.word_1_clue}
+                    (${puzzleData.answer_1.length})
                     that becomes ${puzzleData.word_2_clue}
+                    (${puzzleData.answer_2.length})
                     when you insert ${puzzleData.state_1_clue},
                     and becomes ${puzzleData.word_3_clue}
+                    (${puzzleData.answer_3.length})
                     when you insert ${puzzleData.state_2_clue}.
                 `,
                 answer: `
-                    ${puzzleData.answer_1} becomes
-                    ${puzzleData.answer_2} becomes
-                    ${puzzleData.answer_3}.
+                    ${puzzleData.answer_1.toUpperCase()} becomes
+                    ${puzzleData.answer_2.toUpperCase()} becomes
+                    ${puzzleData.answer_3.toUpperCase()}.
                 `
             };
         },
@@ -53,13 +61,15 @@
             return {
                 question: `
                     Find ${puzzleData.word_1_clue}
+                    (${puzzleData.answer_1.length})
                     that becomes ${puzzleData.word_2_clue}
+                    (${puzzleData.answer_2.length})
                     when you replace ${puzzleData.state_1_clue}
                     with ${puzzleData.state_2_clue}.
                 `,
                 answer: `
-                    ${puzzleData.answer_1} becomes
-                    ${puzzleData.answer_2}.
+                    ${puzzleData.answer_1.toUpperCase()} becomes
+                    ${puzzleData.answer_2.toUpperCase()}.
                 `
             };
         },
@@ -67,10 +77,11 @@
             return {
                 question: `
                     Find ${puzzleData.word_clue}
+                    (${puzzleData.answer.length})
                     that contains ${puzzleData.state_clue} twice.
                 `,
                 answer: `
-                    ${puzzleData.answer} (${puzzleData.state}).
+                    ${puzzleData.answer.toUpperCase()} (${puzzleData.state}).
                 `
             };
         }
