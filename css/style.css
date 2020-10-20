@@ -36,6 +36,24 @@ header button {
     border: 0;
     -webkit-tap-highlight-color: hsl(166, 100%, 12%);
     cursor: pointer;
+    text-indent: -1000em;
+    color: transparent;
+    width: 3em;
+    font-size: inherit;
+}
+
+.button-hidden {
+    visibility: hidden;
+}
+
+#backBtn {
+    background: url(../assets/images/back-arrow.svg) no-repeat 50% 50%;
+    background-size: 70%;
+}
+
+#shareBtn {
+    background: url(../assets/images/share-icon.svg) no-repeat 50% 50%;
+    background-size: 70%;
 }
 
 header button:hover {
@@ -105,8 +123,8 @@ header button:hover {
 }
 
 .sign-list li {
-    // Damnit Firefox, support break-inside:avoid; already!
-    // display:block;
+    /* Damnit Firefox, support break-inside:avoid; already! */
+    /* display:block; */
     display: inline-block;
     break-inside: avoid;
     position: relative;
