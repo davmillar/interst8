@@ -15,25 +15,25 @@
         },
         {
             "pattern": "11000",
-            "word_1_clue": "an atmospheric condition",
+            "word_1_clue": "a weather description",
             "state_1_clue": "a Midwestern state",
             "state_1": "Wisconsin",
             "answer_1": "WINDY",
-            "word_2_clue": "a type of treat",
+            "word_2_clue": "a sweet treat",
             "state_2_clue": "a West coast state",
             "state_2": "California",
             "answer_2": "CANDY"
         },
         {
-            "pattern": "110000",
-            "word_1_clue": "an adjective for a car",
+            "pattern": "1100",
+            "word_1_clue": "something you do with a car",
             "state_1_clue": "an Appalachian Mountain state",
             "state_1": "Pennsylvania",
-            "answer_1": "PARKED",
-            "word_2_clue": "an adjective for a wine bottle",
+            "answer_1": "PARK",
+            "word_2_clue": "bulletin board material",
             "state_2_clue": "a Rocky Mountain state",
             "state_2": "Colorado",
-            "answer_2": "CORKED"
+            "answer_2": "CORK"
         },
         {
             "pattern": "01100",
@@ -41,14 +41,14 @@
             "state_1_clue": "a small state",
             "state_1": "Rhode Island",
             "answer_1": "CRIBS",
-            "word_2_clue": "a dieter's no-no",
+            "word_2_clue": "an Atkin's dieter's no-no",
             "state_2_clue": "a Mississippi River state",
             "state_2": "Arkansas",
             "answer_2": "CARBS"
         },
         {
             "pattern": "01100",
-            "word_1_clue": "a brace or clamp",
+            "word_1_clue": "a brace used on a workshop",
             "state_1_clue": "a Gulf Coast state",
             "state_1": "Louisiana",
             "answer_1": "CLAMP",
@@ -56,6 +56,39 @@
             "state_2_clue": "an Atlantic coast state",
             "state_2": "Rhode Island",
             "answer_2": "CRIMP"
+        },
+        {
+            "pattern": "110000",
+            "word_1_clue": "a job for an electrician",
+            "state_1_clue": "a state known for cheeses",
+            "state_1": "Wisconsin",
+            "answer_1": "WIRING",
+            "word_2_clue": "a job for human resources",
+            "state_2_clue": "a state known for beaches",
+            "state_2": "Hawaii",
+            "answer_2": "HIRING"
+        },
+        {
+            "pattern": "00110",
+            "word_1_clue": "a part of the human body",
+            "state_1_clue": "a Midwestern state",
+            "state_1": "Indiana",
+            "answer_1": "SPINE",
+            "word_2_clue": "a backup",
+            "state_2_clue": "a state along the Ozark Mountains",
+            "state_2": "Arkansas",
+            "answer_2": "SPARE"
+        },
+        {
+            "pattern": "011000",
+            "word_1_clue": "something one would do at a flea market",
+            "state_1_clue": "a state bordering Texas",
+            "state_1": "Arkansas",
+            "answer_1": "BARTER",
+            "word_2_clue": "a dairy product",
+            "state_2_clue": "a state bordering Arizona",
+            "state_2": "Utah",
+            "answer_2": "BUTTER"
         }
     ]
 }

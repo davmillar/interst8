@@ -43,6 +43,12 @@
             "state_clue": "a state bordering Lake Michigan",
             "state": "Indiana",
             "answer": "PAINTING"
+        },
+        {
+            "word_clue": "a substance carried by some diabetics",
+            "state_clue": "a state east of the Mississippi River",
+            "state": "Indiana",
+            "answer": "INSULIN"
         }
     ]
 }
