@@ -1,6 +1,7 @@
 {
-    "name": "-----",
+    "name": "Colorado State Highway 7",
     "type": "cryptic",
+    "//": "I chose this highway because it runs through Boulder, where I first attended NPL con and met Murdoch.",
     "puzzles": [
         {
             "clue": "A movie franchise set in Detroit.",
