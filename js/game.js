@@ -8,6 +8,7 @@
     const shareButton = document.getElementById('shareBtn');
     
     const enumerate = str => str.replace(/[a-z]+/gi, m => m.length);
+    const forwardArrow = `<img src="assets/images/forward-arrow.svg" />`;
 
     const levelTemplates = {
         compose: function (puzzleData) {
@@ -39,7 +40,7 @@
                     when you insert ${puzzleData.state_clue}.
                 `,
                 answer: `
-                    ${puzzleData.answer_1.toUpperCase()} becomes
+                    ${puzzleData.answer_1.toUpperCase()} ${forwardArrow}
                     ${puzzleData.answer_2.toUpperCase()}.
                 `
             };
@@ -57,9 +58,9 @@
                     when you insert ${puzzleData.state_2_clue}.
                 `,
                 answer: `
-                    ${puzzleData.answer_1.toUpperCase()} becomes
-                    ${puzzleData.answer_2.toUpperCase()} becomes
-                    ${puzzleData.answer_3.toUpperCase()}.
+                    ${puzzleData.answer_1.toUpperCase()} ${forwardArrow}
+                    ${puzzleData.answer_2.toUpperCase()} ${forwardArrow}
+                    ${puzzleData.answer_3.toUpperCase()}
                 `
             };
         },
@@ -74,8 +75,8 @@
                     with ${puzzleData.state_2_clue}.
                 `,
                 answer: `
-                    ${puzzleData.answer_1.toUpperCase()} becomes
-                    ${puzzleData.answer_2.toUpperCase()}.
+                    ${puzzleData.answer_1.toUpperCase()} ${forwardArrow}
+                    ${puzzleData.answer_2.toUpperCase()}
                 `
             };
         },
@@ -219,7 +220,7 @@
             listItem.appendChild(listItemDescription);
 
             var listItemAnswer = document.createElement('p');
-            listItemAnswer.textContent = parsedPuzzleData.answer;
+            listItemAnswer.innerHTML = parsedPuzzleData.answer;
             listItemAnswer.classList.add('answer', 'answer--hidden');
             listItem.appendChild(listItemAnswer);
 

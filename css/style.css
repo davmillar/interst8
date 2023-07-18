@@ -171,6 +171,12 @@ header button:hover {
     text-align: center;
 }
 
+.sign-list li p.answer img {
+    aspect-ratio: 1;
+    height: 1em;
+    vertical-align: baseline;
+}
+
 .sign-list li p.answer.answer--hidden::after {
     content: 'View Answer';
     display: block;
