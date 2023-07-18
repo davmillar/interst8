@@ -1,8 +1,0 @@
-[
-    {
-        "id": 1,
-        "name": "Interstate 35W",
-        "icon": "assets/images/level-icons/i35w.svg",
-        "data": "data/levels/135w.json"
-    }
-]
