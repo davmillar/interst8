@@ -23,6 +23,12 @@
                 `
             };
         },
+        cryptic: function (puzzleData) {
+            return {
+                question: puzzleData.clue,
+                answer: puzzleData.answer
+            };
+        },
         insert: function (puzzleData) {
             return {
                 question: `

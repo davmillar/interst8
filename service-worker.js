@@ -1,6 +1,6 @@
 // jshint esversion:6
 var me = self,
-    CACHE_NAME = 'interst8x',
+    CACHE_NAME = 'interst8xy',
     urlsToCache = [
         '/',
         '/?utm_source=web_app_manifest',

@@ -6,7 +6,7 @@ html {
 body {
     background: hsl(166, 100%, 22%);
     color: #fff;
-    font-family: "overpassregular", sans-serif;
+    font-family: "Overpass", "overpassregular", sans-serif;
     font-size: 16px;
     overflow: hidden;
     margin: 0;
@@ -255,6 +255,10 @@ h1 {
     margin: 0;
     padding: 0;
     flex-grow: 1;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
 }
 
 #logo {

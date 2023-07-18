@@ -1,0 +1,26 @@
+{
+    "name": "-----",
+    "type": "cryptic",
+    "puzzles": [
+        {
+            "clue": "A movie franchise set in Detroit.",
+            "answer": "MISSION IMPOSSIBLE",
+            "state": "Michigan"
+        },
+        {
+            "clue": "Hollywood's favorite superhero.",
+            "answer": "CAPTAIN AMERICA",
+            "state": "California"
+        },
+        {
+            "clue": "Thing celebrated annually in Times Square.",
+            "answer": "NEW YEAR",
+            "state": "New York"
+        },
+        {
+            "clue": "They're less 'Tex-Mex' and more 'Connecti-Mex'.",
+            "answer": "CHICKEN TACOS",
+            "state": "Connecticut"
+        }
+    ]
+}

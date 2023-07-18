@@ -47,5 +47,12 @@
         "description": "Discover trios of words where each adds a new state abbreviation to build on the last.",
         "icon": "assets/images/level-icons/ca99.svg",
         "data": "data/levels/ca99.json"
+    },
+    {
+        "id": 8,
+        "name": "------",
+        "description": "Each answer is a two-word name or phrase whose initials are a state abbreviation.",
+        "icon": "assets/images/level-icons/new1.svg",
+        "data": "data/levels/new1.json"
     }
 ]
