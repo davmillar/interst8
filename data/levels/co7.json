@@ -1,0 +1,37 @@
+{
+    "name": "-----",
+    "type": "cryptic",
+    "puzzles": [
+        {
+            "clue": "A movie franchise set in Detroit.",
+            "answer": "MISSION IMPOSSIBLE",
+            "state": "Michigan",
+            "//": "Hat tip to NPLer Murdoch for helping with the format idea here and this clue in particular."
+        },
+        {
+            "clue": "Hollywood's favorite Marvel superhero.",
+            "answer": "CAPTAIN AMERICA",
+            "state": "California"
+        },
+        {
+            "clue": "Thing celebrated annually in Times Square.",
+            "answer": "NEW YEAR",
+            "state": "New York"
+        },
+        {
+            "clue": "These pollo pleasers are less 'Tex-Mex' and more 'Connecti-Mex'.",
+            "answer": "CHICKEN TACOS",
+            "state": "Connecticut"
+        },
+        {
+            "clue": "Famous actor known for his ice-cold pranks.",
+            "answer": "ASHTON KUTCHER",
+            "state": "Alaska"
+        },
+        {
+            "clue": "Midwestern home to a certain 'Wayback Machine'.",
+            "answer": "INTERNET ARCHIVE",
+            "state": "Iowa"
+        }
+    ]
+}
