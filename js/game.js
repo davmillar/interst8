@@ -25,8 +25,12 @@
             };
         },
         cryptic: function (puzzleData) {
+            const answerWords = puzzleData.answer.split(' ');
             return {
-                question: puzzleData.clue,
+                question: `
+                    ${puzzleData.clue}
+                    (${answerWords[0].length}\xa0${answerWords[1].length})
+                `,
                 answer: puzzleData.answer
             };
         },

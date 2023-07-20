@@ -33,6 +33,26 @@
             "clue": "Midwestern home to a certain 'Wayback Machine'.",
             "answer": "INTERNET ARCHIVE",
             "state": "Iowa"
+        },
+        {
+            "clue": "The perfect time to have Tex-Mex with Dolly Parton.",
+            "answer": "TACO NIGHT",
+            "state": "Tennessee"
+        },
+        {
+            "clue": "The real world meets the digital world somewhere between Texas and Tennessee.",
+            "answer": "AUGMENTED REALITY",
+            "state": "Arkansas"
+        },
+        {
+            "clue": "Some universities in Chicago.",
+            "answer": "IVY LEAGUE",
+            "state": "Illinois"
+        },
+        {
+            "clue": "TV series taking place in Yellowstone starring Fred Savage.",
+            "answer": "WONDER YEARS",
+            "state": "Wyoming"
         }
     ]
 }
